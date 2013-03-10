@@ -1,0 +1,3 @@
+MENU_SELECT menuselect.wav
+JUMP jump.wav
+SHOOT shoot.wav

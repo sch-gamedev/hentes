@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="../src/main.cpp" />
+    <ClCompile Include="../src/game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/texture.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/texturemanager.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/menustate.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/ingamestate.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/drawablecomponent.cpp">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/logiccomponent.cpp">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/physicscomponent.cpp">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/gameobject.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/physicscomponentmanager.cpp">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/drawablecomponentmanager.cpp">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/logiccomponentmanager.cpp">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/sound.cpp">
+      <Filter>Engine\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/soundsystem.cpp">
+      <Filter>Engine\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/audioconfigfilereader.cpp">
+      <Filter>Engine\ConfigFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/playerlogiccomponent.cpp">
+      <Filter>Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/utility.cpp">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/spriteconfigfilereader.cpp">
+      <Filter>Engine\ConfigFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/spriteconfigmanager.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/mapfilereader.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/ammologiccomponent.cpp">
+      <Filter>Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/camera.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/bulletmanager.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/bullet.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/bulletlogiccomponent.cpp">
+      <Filter>Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/particle.cpp">
+      <Filter>Engine\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/blood.cpp">
+      <Filter>Engine\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/shootermonsterlogiccomponent.cpp">
+      <Filter>Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/humanoidlogiccomponent.cpp">
+      <Filter>Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/monsterlogiccomponent.cpp">
+      <Filter>Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/bloodmanager.cpp">
+      <Filter>Engine\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/mapsbrowser.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{a0336eb8-6b0c-41df-88ba-dc1f4483e13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Components">
+      <UniqueIdentifier>{025ed6eb-4c82-4504-a507-82fd864a94ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{fd0bca6b-55ac-4aae-a43f-d7eb77d7e8ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Graphics">
+      <UniqueIdentifier>{f41e4fdd-0984-45a8-b35f-fe6cf15392f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Audio">
+      <UniqueIdentifier>{3042a1f3-22dc-4550-aa89-22685fc3bea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ComponentSystem">
+      <UniqueIdentifier>{b469dd95-9ec4-4971-8d01-da58c5fe4765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ConfigFiles">
+      <UniqueIdentifier>{4f96be79-e3fa-4766-86c7-6bd432a06206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ParticleSystem">
+      <UniqueIdentifier>{54fee2ce-d9f9-49c3-95e3-c39125524860}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../src/resource.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/texture.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/texturemanager.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/gamestate.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/menustate.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/ingamestate.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/component.h">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/componentmanager.h">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/drawablecomponent.h">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/message.h">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/logiccomponent.h">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/physicscomponent.h">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/gameobject.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/physicscomponentmanager.h">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/drawablecomponentmanager.h">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/logiccomponentmanager.h">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/sound.h">
+      <Filter>Engine\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/soundsystem.h">
+      <Filter>Engine\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/audioconfigfilereader.h">
+      <Filter>Engine\ConfigFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/configfilereaderbase.hpp">
+      <Filter>Engine\ConfigFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/soundeventtypes.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/playerlogiccomponent.h">
+      <Filter>Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/utility.h">
+      <Filter>Engine\ComponentSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/spriteconfigfilereader.h">
+      <Filter>Engine\ConfigFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/spriteconfigmanager.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/mapfilereader.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/ammologiccomponent.h">
+      <Filter>Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/contactmonsterlogiccomponent.h">
+      <Filter>Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/monsterlogiccomponent.h">
+      <Filter>Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/shootermonsterlogiccomponent.h">
+      <Filter>Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/weaponlogiccomponent.h">
+      <Filter>Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/endlevellogiccomponent.h">
+      <Filter>Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/camera.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/bulletmanager.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/bullet.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/bulletlogiccomponent.h">
+      <Filter>Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/particle.h">
+      <Filter>Engine\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/emitter.h">
+      <Filter>Engine\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/blood.h">
+      <Filter>Engine\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/color.h">
+      <Filter>Engine\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/humanoidligiccomponent.h">
+      <Filter>Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/weapon.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/collisiondescriptor.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/platformlogiccomponent.h">
+      <Filter>Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/bloodmanager.h">
+      <Filter>Engine\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/mapsbrowser.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

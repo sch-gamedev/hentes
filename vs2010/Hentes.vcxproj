@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{37031F26-ED31-436D-A804-29909788B188}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Hentes</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(SolutionDir)\..\SFML\include;</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(SolutionDir)\..\SFML\lib;</LibraryPath>
+    <OutDir>..\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(SolutionDir)\..\SFML\include;</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(SolutionDir)\..\SFML\lib;</LibraryPath>
+    <OutDir>..\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;glu32.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-main-d.lib;sfml-system-s-d.lib;sfml-audio-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;glu32.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-main.lib;sfml-system-s.lib;sfml-audio-s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="../src/ammologiccomponent.cpp" />
+    <ClCompile Include="../src/audioconfigfilereader.cpp" />
+    <ClCompile Include="../src/blood.cpp" />
+    <ClCompile Include="../src/bloodmanager.cpp" />
+    <ClCompile Include="../src/bullet.cpp" />
+    <ClCompile Include="../src/bulletlogiccomponent.cpp" />
+    <ClCompile Include="../src/bulletmanager.cpp" />
+    <ClCompile Include="../src/camera.cpp" />
+    <ClCompile Include="../src/drawablecomponent.cpp" />
+    <ClCompile Include="../src/drawablecomponentmanager.cpp" />
+    <ClCompile Include="../src/game.cpp" />
+    <ClCompile Include="../src/gameobject.cpp" />
+    <ClCompile Include="../src/humanoidlogiccomponent.cpp" />
+    <ClCompile Include="../src/ingamestate.cpp" />
+    <ClCompile Include="../src/logiccomponent.cpp" />
+    <ClCompile Include="../src/logiccomponentmanager.cpp" />
+    <ClCompile Include="../src/main.cpp" />
+    <ClCompile Include="../src/mapfilereader.cpp" />
+    <ClCompile Include="../src/mapsbrowser.cpp" />
+    <ClCompile Include="../src/menustate.cpp" />
+    <ClCompile Include="../src/monsterlogiccomponent.cpp" />
+    <ClCompile Include="../src/particle.cpp" />
+    <ClCompile Include="../src/physicscomponent.cpp" />
+    <ClCompile Include="../src/playerlogiccomponent.cpp" />
+    <ClCompile Include="../src/shootermonsterlogiccomponent.cpp" />
+    <ClCompile Include="../src/sound.cpp" />
+    <ClCompile Include="../src/soundsystem.cpp" />
+    <ClCompile Include="../src/physicscomponentmanager.cpp" />
+    <ClCompile Include="../src/spriteconfigfilereader.cpp" />
+    <ClCompile Include="../src/spriteconfigmanager.cpp" />
+    <ClCompile Include="../src/texture.cpp" />
+    <ClCompile Include="../src/texturemanager.cpp" />
+    <ClCompile Include="../src/utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../src/ammologiccomponent.h" />
+    <ClInclude Include="../src/audioconfigfilereader.h" />
+    <ClInclude Include="../src/blood.h" />
+    <ClInclude Include="../src/bullet.h" />
+    <ClInclude Include="../src/bulletlogiccomponent.h" />
+    <ClInclude Include="../src/bulletmanager.h" />
+    <ClInclude Include="../src/camera.h" />
+    <ClInclude Include="../src/collisiondescriptor.h" />
+    <ClInclude Include="../src/color.h" />
+    <ClInclude Include="../src/component.h" />
+    <ClInclude Include="../src/componentmanager.h" />
+    <ClInclude Include="../src/configfilereaderbase.hpp" />
+    <ClInclude Include="../src/contactmonsterlogiccomponent.h" />
+    <ClInclude Include="../src/drawablecomponent.h" />
+    <ClInclude Include="../src/drawablecomponentmanager.h" />
+    <ClInclude Include="../src/emitter.h" />
+    <ClInclude Include="../src/endlevellogiccomponent.h" />
+    <ClInclude Include="../src/game.h" />
+    <ClInclude Include="../src/gameobject.h" />
+    <ClInclude Include="../src/gamestate.h" />
+    <ClInclude Include="../src/humanoidligiccomponent.h" />
+    <ClInclude Include="../src/ingamestate.h" />
+    <ClInclude Include="../src/logiccomponent.h" />
+    <ClInclude Include="../src/logiccomponentmanager.h" />
+    <ClInclude Include="../src/mapfilereader.h" />
+    <ClInclude Include="../src/mapsbrowser.h" />
+    <ClInclude Include="../src/menustate.h" />
+    <ClInclude Include="../src/message.h" />
+    <ClInclude Include="../src/monsterlogiccomponent.h" />
+    <ClInclude Include="../src/particle.h" />
+    <ClInclude Include="../src/bloodmanager.h" />
+    <ClInclude Include="../src/physicscomponent.h" />
+    <ClInclude Include="../src/physicscomponentmanager.h" />
+    <ClInclude Include="../src/platformlogiccomponent.h" />
+    <ClInclude Include="../src/playerlogiccomponent.h" />
+    <ClInclude Include="../src/resource.h" />
+    <ClInclude Include="../src/shootermonsterlogiccomponent.h" />
+    <ClInclude Include="../src/sound.h" />
+    <ClInclude Include="../src/soundeventtypes.h" />
+    <ClInclude Include="../src/soundsystem.h" />
+    <ClInclude Include="../src/spriteconfigfilereader.h" />
+    <ClInclude Include="../src/spriteconfigmanager.h" />
+    <ClInclude Include="../src/texture.h" />
+    <ClInclude Include="../src/texturemanager.h" />
+    <ClInclude Include="../src/utility.h" />
+    <ClInclude Include="../src/weapon.h" />
+    <ClInclude Include="../src/weaponlogiccomponent.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
