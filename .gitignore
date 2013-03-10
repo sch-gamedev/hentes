@@ -9,6 +9,7 @@
 /vs2010/*.suo
 /vs2010/*.user
 /vs2010/*.opensdf
+/vs2010/*.vspx
 /vs2010/Debug/*
 /vs2010/Release/*
 
@@ -16,5 +17,7 @@
 /vs2012/*.suo
 /vs2012/*.user
 /vs2012/*.opensdf
+/vs2012/*.psess
+/vs2012/*.vspx
 /vs2012/Debug/*
 /vs2012/Release/*
